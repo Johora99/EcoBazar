@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Your custom SCSS styles here
+@import './variable';
+@import './mixins';
+@import './custom';
+@import './media';
