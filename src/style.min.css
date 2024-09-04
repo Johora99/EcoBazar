@@ -40,6 +40,79 @@
   color: rgb(44, 116, 47);
 }
 
+.card-box {
+  transition: all 0.1s ease-in-out;
+}
+.card-box:hover {
+  box-shadow: 0px 0px 20px 0px rgba(8, 7, 54, 0.1), 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+  border: 1px solid rgb(44, 116, 47);
+}
+.card-box:hover .svg-logo {
+  background-color: rgb(0, 178, 7);
+}
+.card-box:hover .svg-logo svg {
+  color: rgb(255, 255, 255);
+}
+.card-box:hover .view {
+  display: block;
+}
+
+.parent {
+  transition: all 0.5 ease-in-out;
+}
+.parent:hover .child:nth-child(1):hover {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.parent:hover .child:nth-child(2):hover {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+.parent:hover .child:nth-child(3):hover {
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+.parent:hover .child:nth-child(4):hover {
+  grid-column: 4/-1;
+  grid-row: 1/3;
+}
+.parent:hover .child:nth-child(5):hover {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.parent:hover .child:nth-child(6):hover {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+.parent:hover .child:nth-child(7):hover {
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+.parent:hover .child:nth-child(8):hover {
+  grid-column: 4/-1;
+  grid-row: 1/3;
+}
+.parent:hover .child:nth-child(9):hover {
+  grid-column: 1/3;
+  grid-row: 2/-1;
+}
+.parent:hover .child:nth-child(10):hover {
+  grid-column: 2/4;
+  grid-row: 2/-1;
+}
+.parent:hover .child:nth-child(11):hover {
+  grid-column: 3/5;
+  grid-row: 2/-1;
+}
+.parent:hover .child:nth-child(12):hover {
+  grid-column: 4/-1;
+  grid-row: 2/-1;
+}
+
+.parent:has(.child:hover) {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 @media screen and (max-width: 350px) {
   .card .card-title {
     font-size: 20px;
