@@ -11,6 +11,7 @@ module.exports = {
         'gray-5':'rgba(247, 247, 247, 1)',
         'border-1':'rgba(128, 128, 128, 1)',
         'border-2':'rgba(230, 230, 230, 1)',
+        'border-3':'rgba(179, 179, 179, 1)',
         'black-1':'rgba(0, 38, 3, 1)',
         'black-2':'rgba(26, 26, 26, 1)',
         'green-1':'rgba(0, 178, 7, 1)',
